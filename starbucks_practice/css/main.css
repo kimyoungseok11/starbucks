@@ -1,0 +1,177 @@
+/* common */
+.inner{
+    width:1100px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin:0 auto
+}
+
+a{
+    text-decoration: none;
+}
+
+ /* header */
+header{
+    width:100%;
+    height: 120px;
+    background-color: #F6F5F0;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+header > .inner{
+    height:100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+
+header .inner .logo{
+    position: absolute;
+    top: 0; bottom: 0;
+    margin:auto
+}
+
+header .inner .sub-menu{
+    position: absolute;
+    right:0; top:10px;
+    display: flex;
+}
+
+header .inner .sub-menu .menu{
+    display: flex;
+    padding:5px 0;
+}
+
+header .inner .sub-menu .menu li a{
+    color:#656565;
+    font-size: 13px;
+    padding:11px 16px;
+    font-family: Arial, sans-serif;
+}
+
+header .inner .sub-menu .menu li a:hover{
+    color:#333;
+}
+
+header .inner .sub-menu .menu li::before{
+    content: "|";
+    color:#c8c8c8
+}
+
+header .inner .sub-menu .menu li:first-child:before{
+    content: "";
+}
+
+header .inner .search{
+    height:34px;
+    position: relative;
+}
+header .inner .search input{
+    width:36px;
+    height:34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color:#777;
+    font-size: 12px;
+    transition: width .4s;
+}
+header .inner .search .material-icons{
+    height: 24px;
+    position: absolute;
+    top:0; bottom: 0; right:5px;
+    margin: auto;
+    transition: 0.4s;
+}
+
+header .inner .search input:focus{
+    width:190px;
+    border: 1px solid #669900;
+}
+
+header .inner .search.focused .material-icons{
+    opacity:0
+}
+
+header .inner .main-menu{
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+}
+
+header .inner .main-menu .item__name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333;
+    padding: 10px 20px 34px 20px;
+}
+
+header .inner .main-menu .item__name:hover{
+    background-color: #333;
+    color:#669900;
+    border-radius: 6px 6px 0 0;
+}
+
+header .inner .main-menu .item .item__contents{
+    width:100%;
+    position: fixed;
+    left:0;
+    display: none;
+}
+
+header .inner .main-menu .item:hover .item__contents{
+    display: block;
+}
+
+header .inner .main-menu .item__contents .contents__menu{
+    background-color: #333;
+}
+
+header .inner .main-menu .item__contents .contents__menu .inner{
+    padding: 10px 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+header .inner .main-menu .item__contents .contents__menu .inner > li {
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+header .inner .main-menu .item__contents .contents__menu .inner > li h4{
+    color: #fff;
+    padding:10px 0;
+}
+
+header .inner .main-menu .item__contents .contents__menu .inner > li ul{
+
+}
+
+header .inner .main-menu .item__contents .contents__menu .inner > li ul li{
+    color:#656565;
+    font-size: 12px;
+    padding:8px 0;
+}
+
+header .inner .main-menu .item__contents .contents__texture{
+    background-image: url("../images/main_menu_pattern.jpg");
+    padding:20px 0;
+    box-sizing: border-box;
+}
+
+header .inner .main-menu .item__contents .contents__texture h4{
+    color: #777;
+    padding:5px 0 5px 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+header .inner .main-menu .item__contents .contents__texture p{
+    color:#669900;
+    font-size: 13px;
+    padding:3px 0 15px 0;
+    box-sizing: border-box;
+}
+

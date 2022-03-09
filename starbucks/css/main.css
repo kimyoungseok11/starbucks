@@ -305,8 +305,8 @@ header .badges .badge{
 }
 .visual .cup1.text{
     position: absolute;
-    bottom: 0;
-    right: 416px;
+    top: 38px;
+    right: 167px;
 }
 
 .visual .cup2.image{
